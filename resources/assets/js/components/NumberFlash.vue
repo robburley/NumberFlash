@@ -99,7 +99,7 @@
                 this.setBackgroundColor()
 
                 if (this.random) {
-                    this.currentNumber = Math.floor(Math.random() * (this.end - this.start + 1) + this.start)
+                    this.currentNumber = Math.floor(Math.random() * (parseInt(this.end) - parseInt(this.start) + 1) + parseInt(this.start))
                 } else {
                     if (this.currentNumber === this.end) {
                         return this.reset()
